@@ -4,20 +4,24 @@ import ReactDOM from "react-dom";
 
 //include bootstrap npm library into the bundle
 import "bootstrap";
-import Icon from "./component/icons"
 
 //include your index.scss file into the bundle
 import "../styles/index.scss";
 
-import Home from "./component/home";
+//import your own components
+import { Home } from "./component/home.js";
 import { SecondsCounter } from "./component/SecondsCounter";
 
 //render your react application
+const start = Date.now();
 
-let currentTime = 
+setInterval(() => {
+	const millis = Date.now() - start;
 
-setInterval(()) => {Date.now() - StaticRange;
-let seconds = (Math.floor)(millis/1000));
-ReactDOM.render(<SecondsCounter />, document.querySelector("#app"));
+	let seconds = Math.floor(millis / 1000);
 
+	ReactDOM.render(
+		<SecondsCounter seconds={seconds} />,
+		document.querySelector("#app")
+	);
 }, 1000);
