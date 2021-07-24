@@ -6,5 +6,5 @@ import { SecondsCounter } from "./SecondsCounter";
 
 //create your first component
 export function Home() {
-	return <SecondsCounter seconds={69} />;
+	return <SecondsCounter seconds={777} />;
 }
