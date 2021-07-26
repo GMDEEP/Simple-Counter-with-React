@@ -7,17 +7,17 @@ export function SecondsCounter(props) {
 	let counterDivs = counterOrganization.map((seconds, i) => (
 		<div key={i} className="col">
 			<div className="card">
-				<div className="card-body">{seconds}</div>
+				<div className="cardbody">{seconds}</div>
 			</div>
 		</div>
 	));
 
 	return (
-		<div className="container">
+		<div className="container text-center">
 			<div className="row">
 				<div className="col">
 					<div class="card">
-						<div class="card-body">
+						<div class="cardbody">
 							<i className="far fa-clock"></i>
 						</div>
 					</div>

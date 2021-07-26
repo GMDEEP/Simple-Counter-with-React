@@ -1,9 +1,14 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-
-#app div{
+.card {
+    border: none;
+}
+.container {
     background-color: black;
-    color: blanchedalmond;
+}
+.cardbody {
+    background-color: rgb(37, 35, 35);
+    color: white;
 }
 
 
